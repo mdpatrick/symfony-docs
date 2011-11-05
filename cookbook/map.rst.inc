@@ -33,6 +33,8 @@
 
   * :doc:`/cookbook/form/form_customization`
   * :doc:`/cookbook/form/create_custom_field_type`
+  * :doc:`/cookbook/form/dynamic_form_generation`
+  * :doc:`/cookbook/form/form_collections`
   * :doc:`/cookbook/validation/custom_constraint`
   * (doctrine) :doc:`/cookbook/doctrine/file_uploads`
 
@@ -49,6 +51,7 @@
 
   * :doc:`/cookbook/bundles/best_practices`
   * :doc:`/cookbook/bundles/inheritance`
+  * :doc:`/cookbook/bundles/override`
   * :doc:`/cookbook/bundles/extension`
 
 * **Emailing**
@@ -85,6 +88,7 @@
 
 * **Templating**
 
+  * :doc:`/cookbook/templating/global_variables`
   * :doc:`/cookbook/templating/PHP`
 
 * **Tools, Logging and Internals**

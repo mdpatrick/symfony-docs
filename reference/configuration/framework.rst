@@ -20,16 +20,16 @@ Configuration
 * `ide`_
 * `test`_
 * `form`_
-* :ref:`enabled<config-framework-form-enabled>`
+    * :ref:`enabled<config-framework-form-enabled>`
 * `csrf_protection`_
-* :ref:`enabled<config-framework-csrf-enabled>`
-* `field_name`
+    * :ref:`enabled<config-framework-csrf-enabled>`
+    * `field_name`
 * `session`_
-* `lifetime`_
+    * `lifetime`_
 * `templating`_
-* `assets_base_urls`_
-* `assets_version`_
-* `assets_version_format`_
+    * `assets_base_urls`_
+    * `assets_version`_
+    * `assets_version_format`_
 
 charset
 ~~~~~~~
@@ -70,23 +70,25 @@ full TextMate string would look like this:
 
 .. code-block:: yaml
 
-framework:
-ide:  "txmt://open?url=file://%%f&line=%%l"
+    framework:
+        ide:  "txmt://open?url=file://%%f&line=%%l"
 
 Of course, since every developer uses a different IDE, it's better to set
 this on a system level. This can be done by setting the ``xdebug.file_link_format``
 PHP.ini value to the file link string. If this configuration value is set, then
 the ``ide`` option does not need to be specified.
 
+.. _reference-framework-test:
+
 test
 ~~~~
 
 **type**: ``Boolean``
 
-If this configuration parameter is present, then the services related to
-testing your application are loaded. This setting should be present in your
-``test`` environment (usually via ``app/config/config_test.yml``). For more
-information, see :doc:`/book/testing`.
+If this configuration parameter is present (and not ``false``), then the
+services related to testing your application (e.g. ``test.client``) are loaded.
+This setting should be present in your ``test`` environment (usually via
+``app/config/config_test.yml``). For more information, see :doc:`/book/testing`.
 
 form
 ~~~~
@@ -210,7 +212,7 @@ would be ``/images/logo.png?version=5``.
 
     All percentage signs (``%``) in the format string must be doubled to escape
     the character. Without escaping, values might inadvertently be interpretted
-    as :ref:`_book-service-container-parameters`.
+    as :ref:`book-service-container-parameters`.
 
 .. tip::
 

@@ -27,6 +27,8 @@ Cookbook
 
     form/form_customization
     form/create_custom_field_type
+    form/dynamic_form_generation
+    form/form_collections
     validation/custom_constraint
 
     configuration/environments
@@ -38,6 +40,7 @@ Cookbook
 
     bundles/best_practices
     bundles/inheritance
+    bundles/override
     bundles/extension
 
     email
@@ -64,6 +67,7 @@ Cookbook
 
     cache/varnish
 
+    templating/global_variables
     templating/PHP
 
     tools/autoloader
